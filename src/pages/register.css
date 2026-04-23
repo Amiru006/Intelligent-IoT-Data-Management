@@ -1,0 +1,72 @@
+:root {
+  --primary: #60a5fa;        /* light blue */
+  --primary-dark: #3b82f6;   /* slightly darker */
+  --bg: #f8fbff;             /* very light blue/white */
+  --card-bg: #ffffff;        /* white */
+  --text: #1f2937;
+  --border: #e5edff;         /* soft blue border */
+}
+
+/* Page layout */
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f6ff, #ffffff);
+}
+
+.register-card {
+  width: 380px;
+  background: var(--card-bg);
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 25px rgba(96, 165, 250, 0.15);
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.form-input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f9fbff;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.25);
+  outline: none;
+}
+
+/* Button */
+.form-button {
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.form-button:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 5px 12px rgba(59, 130, 246, 0.3);
+}
